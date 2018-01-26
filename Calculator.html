@@ -1,0 +1,67 @@
+<html>
+<head>
+<script>
+
+function addi()
+	{
+	a=Number(document.cal.num1.value);
+	b=Number(document.cal.num2.value);
+	document.cal.total.value=a+b;
+	}
+function subs()
+	{
+	a=Number(document.cal.num1.value);
+	b=Number(document.cal.num2.value);
+	document.cal.total.value=a-b;
+	}
+	function mull()
+	{
+	a=Number(document.cal.num1.value);
+	b=Number(document.cal.num2.value);
+	document.cal.total.value=a*b;
+	}
+	function divs()
+	{
+	a=Number(document.cal.num1.value);
+	b=Number(document.cal.num2.value);
+	document.cal.total.value=a/b;
+	}
+	function mods()
+	{
+	a=Number(document.cal.num1.value);
+	b=Number(document.cal.num2.value);
+	document.cal.total.value=a%b;
+	}
+	function greater()
+	{
+	a=Number(document.cal.num1.value);
+	b=Number(document.cal.num2.value);
+	document.cal.total.value=(a>b)?a:b;
+	}
+	function less()
+	{
+	a=Number(document.cal.num1.value);
+	b=Number(document.cal.num2.value);
+	document.cal.total.value=(a<b)?a:b;
+	}
+</script>
+<title>  Calculator</title>
+</head>
+<body >
+ <form name="cal">
+        <table align="center" style="background-color:pink">
+        <tr><td>value1<input type="text" name="num1"></td></tr>
+        <tr><td>value2<input type="text" name="num2"></td></tr>
+        <tr><td>Result<input type="text" name="total" readonly></td></tr>
+       <tr><td><input type="button" value="addition" onclick="addi()"></td></tr>
+       <tr><td><input type="button" value="Substracrtion" onclick="subs()"></tr></td>
+	   <tr><td><input type="button" value="Multiplication" onclick="mull()"></tr></td>
+	   <tr><td><input type="button" value="Division" onclick="divs()"></tr></td>
+	   <tr><td><input type="button" value="modlus" onclick="mods()"></tr></td>
+	   <tr><td><input type="button" value="greater" onclick="greater()"></tr></td>
+	   <tr><td><input type="button" value="Lesser" onclick="less()"></tr></td>
+	   <tr><td><input type="reset" value="clear" ></tr></td>
+ </form>
+
+</body>
+</html>
